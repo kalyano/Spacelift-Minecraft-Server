@@ -43,7 +43,7 @@ resource "aws_key_pair" "home" {
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfewD6rb3Y2bZ8FHOHBP/dToEghLKXVZAy7gQG9DWIwu21yY6dn+hMpwSDHXToMPF9yKmk7q6NwePtOQPuEBi8RTTylP8QQduVuRP8f6SRV74+BDH3EfmzQ/cp2lb8ZPTU0PI3YIPqGdJlWrNN7I4aJ9ehy6vlSNm1Y53MHYW279gQHKazZqKnBiVB4d3ohFb/XyLMaygUvFXGSH164zYR6zXSxgvM8YJj8Qo7PuerNAUR9Z4RXOoTDxJ9uz84Iu8XK4tIZxEOHya1lL9TB5xyvASOOwMd1UCDsUSyTITFP+U+Z5KT3+lEOQynnaEiYZk6yzpDdYKZFvQDDC4QZxHZ kalyanoduri1@gmail.com"
 }
 
-resource "aws_instance" "minecraft-spacelift" {
+resource "aws_instance" "minecraft" {
   ami                         = "ami-090a024fa89feca33"
   instance_type               = "t2.medium"
   vpc_security_group_ids      = [aws_security_group.minecraft.id]
