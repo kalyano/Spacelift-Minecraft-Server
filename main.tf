@@ -66,5 +66,5 @@ resource "aws_instance" "minecraft-spacelift" {
 }
 
 output "instance_ip_addr" {
-  value = aws_instance.minecraft.public_ip
+  value = aws_instance.minecraft-spacelift.public_ip
 }
